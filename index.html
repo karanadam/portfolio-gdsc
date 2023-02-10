@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        module.exports = {
+            theme: {
+                fontFamily: {
+                    poppins: ["Poppins", "sans-serif"],
+                },
+            },
+        };
+
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer components{
+            .btn{
+                @apply px-2 py-2 rounded-lg h-16 w-52;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="mx-40 font-poppins bg-gradient-to-r from-teal-100 to-emerald-200">
+
+
+    <nav class=" h-20 flex justify-between items-center p-10 my-8">
+        <div>
+            <h3 class="text-3xl text-black font-medium">Karan Adam</h3>
+        </div>
+        <div class="flex gap-5 text-xl font-semibold">
+            <a class="hover:text-blue-500" href="#">About</a>
+            <a class="hover:text-blue-500" href="#">Projects</a>
+            <a class="hover:text-blue-500" href="#">Contact Me</a>
+        </div>
+    </nav>
+
+
+    <section class="h-[790px] my-6">
+        <div class="flex flex-row ">
+            <div class="basis-1/2 flex flex-col p-20 gap-10">
+                <div class="">
+                    <h1 class="text-5xl font-bold text-left ">Hello! I'm <span
+                            class="bg-clip-text text-transparent bg-gradient-to-br from-teal-600 to-emerald-400">Karan
+                            Adam</span>, a CSE
+                        Undergrad and a Front
+                        End
+                        Developer.</h1>
+                    <p class="text-xl my-8 font-medium">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolore pariatur ex magnam
+                        amet ullam excepturi eligendi fugit mollitia deleniti eum fuga officiis doloremque, sequi
+                        deserunt molestias, id magni laborum!
+                    </p>
+
+                </div>
+
+                <div class="flex flex-row gap-3 my-4">
+                    <button class="btn shadow-lg flex justify-center items-center "><img class="inline mx-2"
+                            src="./public/github.png" alt="github" width="28px">Github</button>
+                    <button class="btn  bg-transparent shadow-lg">
+                        <img class="inline mx-2" src="./public/linkedin.png" alt="github" width="28px">Linkedin</button>
+                </div>
+            </div>
+            <div class="basis-1/2 flex justify-center items-center ">
+                <img src="./public/photo.jpg" alt="photo" class="h-[760px] rounded-xl">
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
